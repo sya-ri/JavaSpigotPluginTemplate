@@ -3,6 +3,7 @@ import net.minecrell.pluginyml.bukkit.BukkitPluginDescription
 plugins {
     java
     id("net.minecrell.plugin-yml.bukkit") version "0.4.0"
+    id("com.github.ben-manes.versions") version "0.39.0"
 }
 
 version = "1.0.0"
