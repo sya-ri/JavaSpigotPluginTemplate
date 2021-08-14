@@ -14,10 +14,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+    implementation("org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT")
+    implementation("org.jetbrains:annotations:21.0.1")
 }
 
 configure<BukkitPluginDescription> {
     main = "sample.Main" // TODO JavaPlugin を継承したクラスとパッケージを入力する
-    apiVersion = "1.16"
+    apiVersion = "1.17"
 }
