@@ -45,3 +45,13 @@ configure<BukkitPluginDescription> {
     // plugin.yml の中身
 }
 ```
+
+## タスク
+
+### プラグインのビルド `build`
+
+`build/libs` フォルダに `.jar` を生成します。
+
+### テストサーバーの起動 `buildAndLaunchServer`
+
+`:25565` でテストサーバーを起動します。
