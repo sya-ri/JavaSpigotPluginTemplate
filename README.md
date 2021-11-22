@@ -5,7 +5,7 @@
 
 パッケージ名を設定しましょう。 ドメインを逆さにするのが定石になります。もしも自分のドメインを持っていない時は GitHub のアカウントを使いましょう。
 
-### [Main.kt](src/main/java/sample/Main.java)
+### [Main.java](src/main/java/sample/Main.java)
 
 ```java
 package sample; // TODO 固有のパッケージ名を設定する
