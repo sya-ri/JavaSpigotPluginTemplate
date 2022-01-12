@@ -5,8 +5,8 @@ import net.minecrell.pluginyml.bukkit.BukkitPluginDescription
 
 plugins {
     java
-    id("net.minecrell.plugin-yml.bukkit") version "0.5.0"
-    id("com.github.ben-manes.versions") version "0.39.0"
+    id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
+    id("com.github.ben-manes.versions") version "0.41.0"
     id("com.palantir.git-version") version "0.12.3"
     id("dev.s7a.gradle.minecraft.server") version "1.1.0"
 }
