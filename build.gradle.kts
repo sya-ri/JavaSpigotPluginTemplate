@@ -27,7 +27,7 @@ dependencies {
 }
 
 configure<BukkitPluginDescription> {
-    main = "sample.Main" // TODO JavaPlugin を継承したクラスとパッケージを入力する
+    main = "@group@.Main"
     version = gitVersion()
     apiVersion = "1." + pluginVersion.split(".")[1]
 }
@@ -47,3 +47,5 @@ task<LaunchMinecraftServerTask>("buildAndLaunchServer") {
     nogui.set(true)
     agreeEula.set(true)
 }
+
+task<SetupTask>("setup")
