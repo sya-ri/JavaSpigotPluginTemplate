@@ -13,7 +13,7 @@ plugins {
 
 val gitVersion: Closure<String> by extra
 
-val pluginVersion = "1.18.1" // TODO 好きなバージョンに変更する (例: 1.17.1)
+val pluginVersion: String by project.ext
 
 repositories {
     maven(url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
