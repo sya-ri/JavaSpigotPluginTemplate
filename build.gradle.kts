@@ -13,6 +13,8 @@ plugins {
 
 val gitVersion: Closure<String> by extra
 
+val pluginVersion = "1.18.1" // TODO 好きなバージョンに変更する (例: 1.17.1)
+
 repositories {
     maven(url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
     maven(url = "https://oss.sonatype.org/content/groups/public/")
@@ -20,14 +22,14 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT")
+    implementation("org.spigotmc:spigot-api:$pluginVersion-R0.1-SNAPSHOT")
     implementation("org.jetbrains:annotations:23.0.0")
 }
 
 configure<BukkitPluginDescription> {
     main = "sample.Main" // TODO JavaPlugin を継承したクラスとパッケージを入力する
     version = gitVersion()
-    apiVersion = "1.17"
+    apiVersion = "1." + pluginVersion.split(".")[1]
 }
 
 task<LaunchMinecraftServerTask>("buildAndLaunchServer") {
@@ -39,7 +41,7 @@ task<LaunchMinecraftServerTask>("buildAndLaunchServer") {
         }
     }
 
-    jarUrl.set(JarUrl.Paper("1.17.1"))
+    jarUrl.set(JarUrl.Paper(pluginVersion))
     jarName.set("server.jar")
     serverDirectory.set(buildDir.resolve("MinecraftServer"))
     nogui.set(true)
