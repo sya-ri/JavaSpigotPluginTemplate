@@ -22,8 +22,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spigotmc:spigot-api:$pluginVersion-R0.1-SNAPSHOT")
-    implementation("org.jetbrains:annotations:23.0.0")
+    compileOnly("org.spigotmc:spigot-api:$pluginVersion-R0.1-SNAPSHOT")
+    compileOnly("org.jetbrains:annotations:23.0.0")
 }
 
 configure<BukkitPluginDescription> {
