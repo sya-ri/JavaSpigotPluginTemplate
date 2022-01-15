@@ -28,7 +28,7 @@ open class SetupTask : DefaultTask() {
             """
                 package $groupId;
 
-                import org.bukkit.plugin.java.*;
+                import org.bukkit.plugin.java.JavaPlugin;
 
                 public class Main extends JavaPlugin {
                 }
